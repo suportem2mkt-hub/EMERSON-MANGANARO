@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:'Jost',"Century Gothic","Futura",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;text-rendering:geometricPrecision}
+a{color:#B27757;text-decoration:none} a:hover{color:#96625D}
+.frame{position:relative;width:1080px;height:1080px;overflow:hidden;
+  background:#121614;color:#fff;isolation:isolate}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.scrim{position:absolute;inset:0;z-index:1}
+
+.lockup{display:block}
+.lockup .mark{display:block;width:100%;height:auto;color:currentColor;
+  margin:0 0 4.8%}
+.lockup img{display:block;width:100%;height:auto}
+.lockup .tagline{margin:7.4% 0 0;font-weight:400;letter-spacing:.015em;
+  line-height:1;text-align:center;white-space:nowrap}
+
+.eyebrow{font-size:21px;font-weight:400;letter-spacing:.34em;
+  text-transform:uppercase;opacity:.82;margin:0}
+.figure{font-size:146px;font-weight:200;letter-spacing:-.005em;line-height:.92;
+  margin:10px 0 0}
+.figure sup{font-size:.44em;font-weight:300;top:-.52em;position:relative;
+  letter-spacing:0}
+h1{font-size:53px;font-weight:300;letter-spacing:.155em;line-height:1.32;
+  text-transform:uppercase;margin:0;text-wrap:balance}
+.sub{font-size:27px;font-weight:300;letter-spacing:.05em;line-height:1.5;
+  margin:0;opacity:.93;text-wrap:pretty}
+.rule{width:104px;height:1px;background:currentColor;opacity:.55;border:0;margin:0}
+
+.pin-line{display:flex;align-items:center;gap:11px;margin:0;
+  font-size:23px;font-weight:400;letter-spacing:.2em;text-transform:uppercase}
+.pin{width:23px;height:23px;flex:none;opacity:.9}
+.pay{font-size:25px;font-weight:300;letter-spacing:.045em;margin:0;opacity:.92}
+
+.sig{display:flex;align-items:flex-end;justify-content:space-between;gap:24px}
+.sig-brands{display:flex;align-items:center;gap:22px}
+.sig-tl{height:25px;width:auto;display:block}
+.sig-py{height:40px;width:auto;display:block}
+.sig-div{width:1px;height:34px;background:currentColor;opacity:.3;display:block}
+.sig-cor{text-align:right}
+.sig-name{font-size:23px;font-weight:400;letter-spacing:.13em;text-transform:uppercase}
+.sig-meta{font-size:18px;font-weight:300;letter-spacing:.1em;opacity:.72;margin-top:4px}
+.legal{font-size:15px;font-weight:300;letter-spacing:.055em;opacity:.55;margin:14px 0 0}
+
+.c2{display:flex;flex-direction:column;background:#1B211D}
+.c2 .photo{position:relative;height:600px;flex:none;overflow:hidden}
+.c2 .photo .scrim{background:
+  linear-gradient(to top,rgba(18,22,20,.80) 0%,rgba(18,22,20,.06) 42%,
+  rgba(18,22,20,.42) 100%)}
+.c2 .photo .top{position:absolute;z-index:2;top:52px;left:0;right:0;
+  display:flex;justify-content:center}
+.c2 .chip{position:absolute;z-index:2;left:74px;bottom:38px;
+  display:flex;align-items:center;gap:11px;
+  font-size:21px;font-weight:400;letter-spacing:.24em;text-transform:uppercase}
+.c2 .panel{flex:1;padding:52px 74px 50px;display:flex;flex-direction:column;
+  background:#1B211D}
+.c2 h1{font-size:50px}
+.c2 .panel .rule{margin:30px 0 26px}
+.c2 .meta{display:flex;flex-direction:column;gap:12px}
+.c2 .sig{margin-top:auto;padding-top:34px}
+</style>
+</helmet>
+<div class="frame c2">
+<div class="photo">
+  <img class="bg" src="c2-londrina.jpg" alt="">
+  <div class="scrim"></div>
+  <div class="top"><div class="lockup " style="width:276px"><svg class="mark" viewBox="0 0 475 104" fill="none" stroke="currentColor" stroke-width="4.5" stroke-linecap="square"><path d="M3 98 L295 6 L472 6"/></svg><img src="theline-only.png" alt="THE LINE"><p class="tagline" style="font-size:16.6px">Um jeito conectado de viver</p></div></div>
+  <div class="chip"><svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5s6.8-5.7 6.8-11.1a6.8 6.8 0 1 0-13.6 0C5.2 15.8 12 21.5 12 21.5Z"/><circle cx="12" cy="10.2" r="2.5"/></svg><span>Zona Sul &middot; Londrina/PR</span></div>
+</div>
+<div class="panel">
+  <h1>More a 6 minutos do<br>Shopping Catuaí</h1>
+  <hr class="rule">
+  <div class="meta">
+    <p class="sub">Lotes a partir de 250 m² em condomínio<br>fechado estilo clube, na Gleba Cafezal.</p>
+    <p class="pay">Parcelamento direto com a loteadora em até 180x</p>
+  </div>
+  <footer class="sig">
+  <div class="sig-brands">
+    <img class="sig-tl" src="theline-only.png" alt="THE LINE">
+    <span class="sig-div"></span>
+    <img class="sig-py" src="paysage.png" alt="Paysage Corpal">
+  </div>
+  <div class="sig-cor">
+    <div class="sig-name">[NOME DO CORRETOR]</div>
+    <div class="sig-meta">CRECI [000000-F] &middot; [@INSTAGRAM]</div>
+  </div>
+</footer>
+<p class="legal">Imagens preliminares, meramente ilustrativas.</p>
+</div>
+</div>
+</x-dc>
+</body>
+</html>

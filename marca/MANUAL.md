@@ -73,3 +73,15 @@ Dados que normalmente entram no criativo. Ajustar por peça:
 
 tipo · bairro/cidade · área útil · dormitórios · suítes · vagas · valor ·
 condomínio · IPTU · código do imóvel
+
+---
+
+## Marcas de terceiros
+
+O corretor divulga empreendimentos que têm identidade própria. Essas marcas
+**não** substituem a dele: a assinatura do corretor (nome + CRECI + contato)
+entra em toda peça, junto das marcas do empreendimento.
+
+| Empreendimento | Pasta | Marcas envolvidas |
+|---|---|---|
+| THE LINE | `criativos/2026-09-the-line-lotes/` | THE LINE · Paysage Corpal · Barreto Negócios Imobiliários |

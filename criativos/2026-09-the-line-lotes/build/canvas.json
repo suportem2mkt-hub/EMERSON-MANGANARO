@@ -1,0 +1,63 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "1 · Região desejada"
+    },
+    {
+      "file": "Catuai.dc.html",
+      "x": 1200,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "2 · 6 min do Catuaí"
+    },
+    {
+      "file": "Metragem.dc.html",
+      "x": 2400,
+      "y": 0,
+      "w": 1080,
+      "h": 1080,
+      "title": "3 · Metragem rara"
+    },
+    {
+      "file": "Clube.dc.html",
+      "x": 0,
+      "y": 1280,
+      "w": 1080,
+      "h": 1080,
+      "title": "4 · Clube 12.000 m²"
+    },
+    {
+      "file": "Noticia.dc.html",
+      "x": 1200,
+      "y": 1280,
+      "w": 1080,
+      "h": 1080,
+      "title": "5 · Versão notícia"
+    }
+  ],
+  "annotations": [
+    {
+      "id": "pendencias",
+      "x": 2400,
+      "y": 1280,
+      "w": 420,
+      "text": "Falta preencher\n\n· Nome do corretor + CRECI + @\n· Logo da Barreto (não veio no caderno)\n\nOs campos entre [colchetes] em todas as\npeças são placeholders."
+    },
+    {
+      "id": "fontes",
+      "x": 2400,
+      "y": 1620,
+      "w": 420,
+      "text": "Base\n\nRenders e logos extraídos do Caderno do\nCorretor. Paleta amostrada das páginas\nchapadas: terracota B27757, areia EBDBCE,\nmusgo 868F79, terra rosé 96625D.\n\nTipografia Jost (display) + Newsreader (notícia)."
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}
