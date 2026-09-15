@@ -57,7 +57,8 @@ pelo mesmo motivo.
 
 ## Pendências
 
-- [ ] Nome do corretor, CRECI e @ — hoje são placeholders entre `[colchetes]` nas 5 peças
+- [ ] **Logo do Emerson** — a peça tem um slot pronto no canto inferior direito. Basta salvar `src/emerson-logo.png` (versão para fundo escuro) e `src/emerson-logo-dark.png` (versão para o fundo creme da peça 5) e rodar `make.py` + `render.py`
+- [ ] CRECI e @ — ainda como placeholders entre `[colchetes]` nas 5 peças
 - [ ] Logo da Barreto Negócios Imobiliários — não veio no caderno, só nas stories de referência
 - [ ] Confirmar se pode usar os renders em peça pública: o caderno marca "uso exclusivo de treinamento / imagens preliminares"
 

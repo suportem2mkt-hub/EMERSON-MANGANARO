@@ -36,6 +36,21 @@ def lockup(w, cls="", tagline=True):
             f'<img src="theline-only.png" alt="THE LINE">{tag}</div>')
 
 
+# o logo do corretor entra assim que o arquivo existir; ate la, slot marcado
+LOGO_CLARO = "emerson-logo.png"      # versao para fundo escuro
+LOGO_ESCURO = "emerson-logo-dark.png"  # versao para o fundo creme da peca 5
+
+
+def corretor(dark_bg=True):
+    f = LOGO_CLARO if dark_bg else LOGO_ESCURO
+    if os.path.exists(f"src/{f}"):
+        marca = f'<img class="sig-logo" src="{f}" alt="Emerson Manganaro">'
+    else:
+        marca = '<div class="sig-slot">logo do corretor</div>'
+    return (f'<div class="sig-cor">{marca}'
+            f'<div class="sig-meta">CRECI [000000-F] &middot; [@INSTAGRAM]</div></div>')
+
+
 def sig(dark_bg=True):
     s = "" if dark_bg else "-dark"
     return f'''<footer class="sig">
@@ -44,10 +59,7 @@ def sig(dark_bg=True):
     <span class="sig-div"></span>
     <img class="sig-py" src="paysage{s}.png" alt="Paysage Corpal">
   </div>
-  <div class="sig-cor">
-    <div class="sig-name">[NOME DO CORRETOR]</div>
-    <div class="sig-meta">CRECI [000000-F] &middot; [@INSTAGRAM]</div>
-  </div>
+  {corretor(dark_bg)}
 </footer>
 <p class="legal">Imagens preliminares, meramente ilustrativas.</p>'''
 
@@ -97,9 +109,12 @@ h1{{font-size:53px;font-weight:300;letter-spacing:.155em;line-height:1.32;
 .sig-tl{{height:25px;width:auto;display:block}}
 .sig-py{{height:40px;width:auto;display:block}}
 .sig-div{{width:1px;height:34px;background:currentColor;opacity:.3;display:block}}
-.sig-cor{{text-align:right}}
-.sig-name{{font-size:23px;font-weight:400;letter-spacing:.13em;text-transform:uppercase}}
-.sig-meta{{font-size:18px;font-weight:300;letter-spacing:.1em;opacity:.72;margin-top:4px}}
+.sig-cor{{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:9px}}
+.sig-logo{{display:block;height:48px;width:auto;max-width:310px;object-fit:contain}}
+.sig-slot{{display:flex;align-items:center;justify-content:center;
+  width:250px;height:48px;border:1px dashed currentColor;opacity:.45;
+  font-size:15px;font-weight:400;letter-spacing:.18em;text-transform:uppercase}}
+.sig-meta{{font-size:18px;font-weight:300;letter-spacing:.1em;opacity:.72}}
 .legal{{font-size:15px;font-weight:300;letter-spacing:.055em;opacity:.55;margin:14px 0 0}}
 '''
 
