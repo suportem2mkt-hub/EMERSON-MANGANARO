@@ -7,8 +7,8 @@
 
 | Campo | Valor |
 |---|---|
-| Nome do corretor | ? |
-| Nome comercial / imobiliária | ? |
+| Nome do corretor | Emerson Manganaro |
+| Nome comercial | Emerson Manganaro &mdash; Negócios Imobiliários |
 | CRECI | ? |
 | Telefone / WhatsApp | ? |
 | Instagram | ? |
@@ -21,10 +21,17 @@ Arquivos em `logos/`.
 
 | Versão | Arquivo | Uso |
 |---|---|---|
-| Principal | ? | fundo claro |
-| Negativa | ? | fundo escuro ou foto |
-| Monocromática | ? | impressão de 1 cor |
-| Reduzida / símbolo | ? | avatar, favicon, selo |
+| Negativa (branca) | `logos/emerson-manganaro-branco.png` | fundo escuro ou foto |
+| Monocromática escura | `logos/emerson-manganaro-escuro.png` | fundo claro &mdash; gerada por recoloração da branca |
+| Principal (colorida) | ? | **pendente** |
+| Reduzida / símbolo | ? | **pendente** &mdash; o símbolo isolado serviria de avatar |
+
+O arquivo recebido é branco chapado (`#FFFFFF`) sobre transparente, 2611 × 446 px,
+proporção 5,85:1. Marca gráfica à esquerda + `EMERSON MANGANARO` em serifada,
+com `NEGÓCIOS IMOBILIÁRIOS` como linha de apoio.
+
+Sem vetor por enquanto: o PNG a 2611 px aguenta aplicação até cerca de 900 px
+de largura com folga. Acima disso, pedir SVG/AI/EPS.
 
 **Área de respiro:** ?
 **Tamanho mínimo:** ?

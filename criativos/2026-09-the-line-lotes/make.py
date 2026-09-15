@@ -110,7 +110,7 @@ h1{{font-size:53px;font-weight:300;letter-spacing:.155em;line-height:1.32;
 .sig-py{{height:40px;width:auto;display:block}}
 .sig-div{{width:1px;height:34px;background:currentColor;opacity:.3;display:block}}
 .sig-cor{{text-align:right;display:flex;flex-direction:column;align-items:flex-end;gap:9px}}
-.sig-logo{{display:block;height:48px;width:auto;max-width:310px;object-fit:contain}}
+.sig-logo{{display:block;height:52px;width:auto;max-width:340px;object-fit:contain}}
 .sig-slot{{display:flex;align-items:center;justify-content:center;
   width:250px;height:48px;border:1px dashed currentColor;opacity:.45;
   font-size:15px;font-weight:400;letter-spacing:.18em;text-transform:uppercase}}
